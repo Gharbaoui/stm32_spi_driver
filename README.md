@@ -24,3 +24,9 @@ and MCU read at rate of 20 values per
 ````
 
 ![](./pics/spi_timing_problem.jpg)
+
+```
+this problem solved by adding wire (clock) to sync between sensor and MCU
+```
+
+![](./pics/spi_clock.png)
