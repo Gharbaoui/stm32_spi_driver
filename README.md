@@ -30,3 +30,12 @@ this problem solved by adding wire (clock) to sync between sensor and MCU
 ```
 
 ![](./pics/spi_clock.png)
+
+```
+and we need to add other wire so we can read and write
+and usually we need to talk to more than one sensor so 
+we will add other wire to select which sensor that MCU
+is talking to
+```
+
+![](./spi_theory_done.png)
