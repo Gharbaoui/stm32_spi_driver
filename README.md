@@ -17,3 +17,10 @@ we could connect MCU to sensor with wire and sensor will send for example 5v mea
 ```
 
 ![](./pics/spi_protocol_construct.png)
+
+````
+but you may see a problem here let's say heat sensor send data at rate of 10 values per second
+and MCU read at rate of 20 values per
+````
+
+![](./pics/spi_timing_problem.jpg)
