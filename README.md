@@ -38,4 +38,4 @@ we will add other wire to select which sensor that MCU
 is talking to
 ```
 
-![](./spi_theory_done.png)
+![](./pics/spi_theory_done.png)
