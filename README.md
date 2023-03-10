@@ -55,3 +55,17 @@ being sampled by the devices
 CPHA=0: First clock edge
 CPHA=1: Second clock edge
 ````
+
+#### Info
+
+```
+I have stm32f446ret and it has multiple spi pins
+
+I will choose spi1 for now
+
+- spi1_miso: PA6 or PB4
+- spi1_mosi: PA7 or PB5
+- spi1_sck: PA5 or PB3
+- spi1_nss: PA4 or PA15
+
+```
