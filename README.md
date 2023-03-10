@@ -39,3 +39,17 @@ is talking to
 ```
 
 ![](./pics/spi_theory_done.png)
+
+
+#### Notes:
+
+```
+Clock polarity determines the state of the clock line when idle.
+CPOL=0 Idle Low
+CPOL=1 Idle High
+```
+
+````
+The clock phase determines the clock edge on which the data will start
+being sampled by the devices
+````
