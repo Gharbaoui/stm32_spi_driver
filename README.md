@@ -52,4 +52,6 @@ CPOL=1 Idle High
 ````
 The clock phase determines the clock edge on which the data will start
 being sampled by the devices
+CPHA=0: First clock edge
+CPHA=1: Second clock edge
 ````
