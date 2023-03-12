@@ -9,6 +9,10 @@ void	clock_init(void) {
 void	gpio_init(void) {
 	GPIOA_MODER &= ~( ( 3 << (2 * 4) ) | ( 3 << (2 * 5) ) |
 	( 3 << (2 * 6) ) | ( 3 << (2 * 7) ) );
+
+	/* set gpioa 4-7 ports to alternating funciton */
+
+	GPIOA_MODER |= (  (2 << (2*4)) | (2 << (2*5)) | (2 << (2*6)) | (2 << (2*7)) );
 }
 
 int	main(void) {
