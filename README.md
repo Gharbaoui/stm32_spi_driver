@@ -88,3 +88,8 @@ AHB1 is connected to a clock that needs to be enabled
 enable ahb1 clock for GPIOA
 
 ![](./pics/enable_gpio_clock.png)
+
+enable apb2 aka spi1 clock
+
+![](./pics/enable_apb2_spi_clock.png)
+![](./pics/enable_apb2_spi_clock_set.png)
