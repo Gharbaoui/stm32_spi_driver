@@ -103,4 +103,4 @@ enable apb2 aka spi1 clock
 ```
 it should be cleared first
 ```
-![](./pics/clear_gpio_moder.png)
+![](./pics/clear_gpioa_moder.png)
