@@ -99,3 +99,8 @@ enable apb2 aka spi1 clock
 
 ![](./pics/set_gpioa.png)
 ![](./pics/set_gpioa_moder.png)
+
+```
+it should be cleared first
+```
+![](./pics/clear_gpio_moder.png)
