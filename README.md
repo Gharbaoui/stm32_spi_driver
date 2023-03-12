@@ -69,3 +69,16 @@ I will choose spi1 for now
 - spi1_nss: PA4 or PA15
 
 ```
+
+##### Block Diagram
+
+![](./pics/block_diagram.png)
+
+````
+spi1 location well as you can see that spi1 is connected to APB2 and APB2 is connected
+to AHB/APB bridge that in iteself connected to AHB1
+AHB1 is connected to a clock that needs to be enabled
+````
+
+![](./pics/block_diagram_spi1.png)
+![](./pics/why_enable_clocks.png)
