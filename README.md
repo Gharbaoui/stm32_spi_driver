@@ -93,3 +93,9 @@ enable apb2 aka spi1 clock
 
 ![](./pics/enable_apb2_spi_clock.png)
 ![](./pics/enable_apb2_spi_clock_set.png)
+
+
+*info about GPIOA*
+
+![](./pics/set_gpioa.png)
+![](./pics/set_gpioa_moder.png)
