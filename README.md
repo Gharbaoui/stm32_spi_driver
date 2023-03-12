@@ -82,3 +82,9 @@ AHB1 is connected to a clock that needs to be enabled
 
 ![](./pics/block_diagram_spi1.png)
 ![](./pics/why_enable_clocks.png)
+
+##### development process
+
+enable ahb1 clock for GPIOA
+
+![](./pics/enable_gpio_clock.png)
