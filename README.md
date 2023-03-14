@@ -101,6 +101,19 @@ enable apb2 aka spi1 clock
 ![](./pics/set_gpioa_moder.png)
 
 ```
-it should be cleared first
+
+it should be cleared first and set to alternate function
+
 ```
 ![](./pics/clear_gpioa_moder.png)
+
+##### *What is alternate function*
+
+```
+-general purpose I/O pins are used for any general-purpose input or output use.
+this could include usingi any pin as an input for a switch or using a pin an
+output for an LED
+
+-when a GPIO pin is used for any alternate purpose (SPI, USART,...) other than as a general purpose
+then it is said to be in alternate function mode
+```
