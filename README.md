@@ -110,10 +110,33 @@ it should be cleared first and set to alternate function
 ##### *What is alternate function*
 
 ```
-*general purpose I/O pins are used for any general-purpose input or output use.
+- general purpose I/O pins are used for any general-purpose input or output use.
 this could include usingi any pin as an input for a switch or using a pin an
 output for an LED
 
-*when a GPIO pin is used for any alternate purpose (SPI, USART,...) other than as a general purpose
+- when a GPIO pin is used for any alternate purpose (SPI, USART,...) other than as a general purpose
 then it is said to be in alternate function mode
 ```
+
+```
+pins are set to alternate function the question now which alternate function
+that we need to preforem SPI or I2c for example
+
+pins i will use are P4-P7 so we need the low register of GPIO alternate function
+```
+
+![](./pics/alternate_low_register.png)
+
+```
+the question now what value we should put AF0? AF1? ...AF15?
+well we can get that data from datasheet from the pic below you can see
+that AF5 is representing SPI1
+```
+
+![](./pics/alternate_function_map.png)
+
+````
+from info above we need to fill as the picture
+````
+
+![](./pics/alternate_function_set.png)
