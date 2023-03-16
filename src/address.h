@@ -7,3 +7,6 @@
 #define GPIOA_BASE_ADDR 0x40020000
 #define GPIOA_MODER *(volatile uint32_t *)(GPIOA_BASE_ADDR + 0x0)
 #define	GPIOA_AFRL *(volatile uint32_t *)(GPIOA_BASE_ADDR + 0x20)
+
+
+#define	SPI1_BASE_ADDR 0x40013000

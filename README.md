@@ -140,3 +140,13 @@ from info above we need to fill as the picture
 ````
 
 ![](./pics/alternate_function_set.png)
+
+
+#### Configure the Actual SPI
+
+````
+unitl this point we just told the pins that we are going to use SPI
+SPI boundary address
+````
+
+![](./pics/spi_boundary_address.png)
