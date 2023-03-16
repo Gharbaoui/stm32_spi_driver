@@ -150,3 +150,9 @@ SPI boundary address
 ````
 
 ![](./pics/spi_boundary_address.png)
+
+````
+since we are using P4-P7 we will need spi register control 1
+````
+
+![](./pics/spi_cr1.png)
