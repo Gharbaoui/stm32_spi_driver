@@ -161,4 +161,21 @@ since we are using P4-P7 we will need spi register control 1
 ````
 BIDMODE: determines whether the SPI will function as full duplex or half duplex
 	* my spi driver will be full-duplex so i need to set bit 15 to 0
+
+BIDIO: sets the direction of data transfer if we set to use half-duplex in this case we are not
 ````
+
+### Random info (this is just me reading more about spi of stm32)
+
+```
+**The STM32 SPI offers various operating modes**
+
+- the communication speed can't exceed half of the internal bus frequency
+- minimum of two wires is required to provide the serial data flow synchornized by clock signal in single direction
+- an optional hardware slave select control signal can be added
+- the data size andd transmit shift order are configurable
+- clock signal polarity and phase also configurable
+- polarity and timing adjustment of the slave select signal
+
+`the user can use specific data buffers with an optiona automatic CYCLIC REDUNDANCY CHECK OR CRC calculation i have no idea what is this for now`
+```
