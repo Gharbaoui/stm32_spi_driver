@@ -156,3 +156,9 @@ since we are using P4-P7 we will need spi register control 1
 ````
 
 ![](./pics/spi_cr1.png)
+
+
+````
+BIDMODE: determines whether the SPI will function as full duplex or half duplex
+	* my spi driver will be full-duplex so i need to set bit 15 to 0
+````
