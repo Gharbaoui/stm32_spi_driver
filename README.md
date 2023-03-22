@@ -178,6 +178,17 @@ SSM: `(Software slave management) bit 9 determines how the slave select pin
 	is controlled there are two ways to manage the slave selec pin through hardware or
 	through software
 	when this bit is 0 SS is managed by hardware 1 managed by software`
+LSBFIRST: frame format i will set to 0 for now i do not know what sensor i will use
+		this may change later
+
+SPE: SPI enable set it to 1
+
+BR[2:0]: buad rate control i do not what sensor i will use i will choose randomly now
+		 i will use 101 or Fpclk/64
+MSTR: master selection should be 1
+
+CPOL: 0
+CPHA: 0
 
 
 ````
