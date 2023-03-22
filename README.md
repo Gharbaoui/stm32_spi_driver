@@ -58,6 +58,8 @@ CPHA=1: Second clock edge
 
 #### Info
 
+![](./pics/board_pinout.png)
+
 ```
 I have stm32f446ret and it has multiple spi pins
 
@@ -163,6 +165,21 @@ BIDMODE: determines whether the SPI will function as full duplex or half duplex
 	* my spi driver will be full-duplex so i need to set bit 15 to 0
 
 BIDIO: sets the direction of data transfer if we set to use half-duplex in this case we are not
+
+CRCEN: configure cyclic redundcy check which i will not cover
+
+CRCNEXT is related so ignore them also
+
+DFF: dasta frame format	set it to 0 to indicate 8-bit data frame
+
+RXONLY: receive only mode enabled set it to 0 for full duplex
+
+SSM: `(Software slave management) bit 9 determines how the slave select pin
+	is controlled there are two ways to manage the slave selec pin through hardware or
+	through software
+	when this bit is 0 SS is managed by hardware 1 managed by software`
+
+
 ````
 
 ### Random info (this is just me reading more about spi of stm32)
@@ -177,5 +194,12 @@ BIDIO: sets the direction of data transfer if we set to use half-duplex in this 
 - clock signal polarity and phase also configurable
 - polarity and timing adjustment of the slave select signal
 
-`the user can use specific data buffers with an optiona automatic CYCLIC REDUNDANCY CHECK OR CRC calculation i have no idea what is this for now`
+- an spi data frame is defined by the SS signal, and no start or stop bits are used
+	like other protocols (so every SCLK transfers a data bit)
+	the master must drive the SS signal to a given slave in order to intiate a read
+	or write After SS is asserted (typically low) eight or more clock transitions can
+	be asserted depending on the number of bits that must be transferred
+	Most SPI devices use units of 8-bits but any data size can be used
+	in some devices SS assertion not only initiates a data frame, but also enables
+	the device to a preform function for example some analog to digital converters use transition on SS to start a conversion
 ```
